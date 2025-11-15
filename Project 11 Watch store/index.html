@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoLux - Animated Watch Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header class="header">
+        <nav class="container">
+            <a href="index.html" class="logo">ChronoLux</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#featured">Watches</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html" aria-label="Shopping Cart" class="cart-icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" data-count="0">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-hero">Timeless Precision,<br>Modern Elegance.</h1>
+                <p class="animate-hero">Discover our exclusive collection of handcrafted timepieces, designed for the discerning individual.</p>
+                <a href="#featured" class="btn animate-hero">Explore Collection</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Luxury Watch" class="animate-hero">
+            </div>
+        </section>
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Our Collection</h2>
+                <div class="product-grid">
+                    <!-- Product cards are now dynamic, but the structure remains. -->
+                    <!-- Client can copy/paste this block to add a new watch visually. -->
+                    <div class="product-card animate-on-scroll" data-id="navigator">
+                        <a href="product.html?id=navigator" class="product-link">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="The Navigator">
+                            </div>
+                            <div class="product-info">
+                                <h3>The Navigator</h3>
+                                <p class="price">$1,850</p>
+                                <p class="short-desc">A robust dual-time zone automatic, built for the modern adventurer and world traveler.</p>
+                            </div>
+                        </a>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-id="monarch">
+                         <a href="product.html?id=monarch" class="product-link">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="The Monarch">
+                            </div>
+                            <div class="product-info">
+                                <h3>The Monarch</h3>
+                                <p class="price">$2,300</p>
+                                <p class="short-desc">A classic dress watch with a polished gold-tone case that exudes pure class and luxury.</p>
+                            </div>
+                        </a>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-id="minimalist">
+                        <a href="product.html?id=minimalist" class="product-link">
+                            <div class="product-image">
+                                <img src="https://images.pexels.com/photos/9978711/pexels-photo-9978711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="The Minimalist">
+                            </div>
+                            <div class="product-info">
+                                <h3>The Minimalist</h3>
+                                <p class="price">$980</p>
+                                <p class="short-desc">Embracing "less is more," this timepiece offers a clean, balanced dial for the modern professional.</p>
+                            </div>
+                        </a>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="showcase" class="showcase">
+            <div class="container showcase-container">
+                <div class="showcase-image animate-on-scroll">
+                    <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Craftsmanship">
+                </div>
+                <div class="showcase-content animate-on-scroll">
+                    <h2 class="section-title">A Legacy of Craftsmanship</h2>
+                    <p>Every ChronoLux timepiece is a testament to centuries of Swiss watchmaking tradition, blended with cutting-edge technology and materials.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Certified Swiss Movement</li>
+                        <li><i class="fas fa-check-circle"></i> Sapphire Crystal Glass</li>
+                        <li><i class="fas fa-check-circle"></i> 316L Stainless Steel Case</li>
+                        <li><i class="fas fa-check-circle"></i> 5-Year International Warranty</li>
+                    </ul>
+                    <a href="about.html" class="btn">Learn Our Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>ChronoLux</h3>
+                <p>Experience the pinnacle of timekeeping. Follow us on our journey.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+          <p>&copy; 2025 ChronoLux. All Rights Reserved. Designed  by Sher Bahadur </p>            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
